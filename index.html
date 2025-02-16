@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexify</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'
+    integrity='sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=='
+    crossorigin='anonymous' />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar position-fixed top-0  z-2 navbar-expand-lg w-100 ">
+      <div class="container-fluid">
+        <div class="navbar-brand d-flex align-items-center" id="nav-icon">
+          <img src="Images/swiper-logo.svg" alt="" width="50px">
+          <h1 id="swiper"">Swiper</h1>
+        </div>
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2   mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link p-3 fw-600" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-3 fw-600" href="#">Docs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link fw-600 dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Resources
+                  </a>
+                  <ul class="dropdown-menu border-secondary">
+                    <li><a class="dropdown-item fw-600" href="#">Demos</a></li>
+                    <li>
+                      <hr class="dropdown-divider bg-secondary">
+                    </li>
+                    <li><a class="dropdown-item fw-600" href="#">Plugins</a></li>
+                    <li>
+                      <hr class="dropdown-divider bg-secondary">
+                    </li>
+                    <li><a class="dropdown-item fw-600" href="#">Blogs</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="btn border-0 ms-4 ">Get Startred</button>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <section class="hero-section-container overflow-hidden" id="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 left-hero mb-5 mt-5">
+          <div class="hero-section-logo">
+            <img src="Images/swiper-logo.svg" alt="swiper logo">
+          </div>
+          <h1 class="title fw-600 mt-4 mb-0">Swiper</h1><br>
+          <h1 class="sub-title fw-600 mt-0">The Most Modern Mobile Touch Slider</h1>
+          <p class="text-secondary">MIT Licensed, v11.2.4 released on February 14, 2025</p>
+          <button class="btn btn border-0 mt-3 mb-md-5">Explore Now</button>
+
+
+        </div>
+
+        <div class="col-lg-6 col-md-12  mt-5 right-hero mb-5">
+
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide-1">
+                <video class="border rounded" autoplay muted src="Videos/carousel-dark.mp4"></video>
+                <video class="border rounded " autoplay muted src="Videos/fashion.mp4"></video>
+                <video class="border rounded video-3" autoplay muted src="Videos/triple-dark.mp4"></video>
+                <video class="border rounded video-4" autoplay muted src="Videos/panorama-dark.mp4"></video>
+              </div>
+              <div class="swiper-slide slide-2 ">
+                <h1 class="fw-600">Start using It Now</h1>
+                <button class=" btn btn border-0 ms-4" id="slide-btn">Get Startred</button>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+
+
+        </div>
+      </div>
+  </section>
+  <section class="small-section container mb-5 d-flex align-items-center justify-content-center">
+    <div class="row d-flex  align-items-center justify-content-center">
+      <div class="col-12">
+        <div class="box rounded mt-lg-5">
+          <img src="Images/space.jpg" class="rounded" alt="">
+          <a href="#" class="text-decoration-none fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Optio facere laboriosam beatae repellat tenetur. Itaque?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section container mt-3 ">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-12 about justify-content-center">
+        <h1 class="about-title mb-5 mt-lg-5 text-center">Swiper</h1>
+        <p class="text-center fw-500 fs-2 ">Swiper is the most modern <u> free and open source </u> mobile touch slider
+          with hardware accelerated transitions and amazing native behavior. Use it on websites, web apps, and mobile
+          native/hybrid apps.</p>
+        <p class="text-center fw-500 fs-2 mt-lg-5">Swiper, along with other great components, is a part of Framework7
+          and Ionic Framework - a fully-featured frameworks for building iOS & Android apps.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="available-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-center mt-lg-5">
+        <div class="col-12">
+          <div class="img-container mb-5 d-flex justify-content-center align-items-center gap-5 flex-row flex-wrap flex-lg-row">
+            <div class="img-box border border-secondary rounded-5  "> <img src="Images/js.svg" alt="">
+            </div>
+            <div class="img-box border border-secondary rounded-5 "> <img src="Images/react.svg">
+            </div>
+            <div class="img-box border border-secondary rounded-5 "> <img src="Images/vue.svg">
+            </div>
+            <div class="img-box border border-secondary rounded-5 "> <img src="Images/webcomponents.svg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="text-secondary fw-600 mb-0 text-center">Designed and Developed by Madhav M</p>
+   <p class="text-center"><a class="text-decoration-none" target="_blank" href="https://github.com/MSMADHAV3945"><i class="fa-brands fa-github">&nbsp</i>github</a></p> 
+  </footer>
+
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
